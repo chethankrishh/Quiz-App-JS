@@ -86,3 +86,8 @@ button:disabled {
   padding: 10px;
   cursor: pointer;
 }
+
+.options.selected {
+  border-color: #007bff;
+  background-color: #e7f1ff;
+}

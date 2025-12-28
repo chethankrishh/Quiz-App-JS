@@ -62,7 +62,12 @@ function displayQuestion() {
 
 quizoptionwrp.addEventListener("click", (e) => {
   if (e.target.classList.contains("options")) {
+    document.querySelectorAll(".options").forEach((option) => {
+      option.classList.remove("selected");
+    });
+
     selectedAnswer = e.target.textContent;
+    e.target.classList.add("selected");
     console.log("Selected Answer:", selectedAnswer);
   }
 });
